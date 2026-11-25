@@ -1,0 +1,217 @@
+.root {
+  --mx: 0;
+  --my: 0;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  display: none;
+}
+
+.rail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: max(140px, calc((100vw - var(--width)) / 2 - 12px));
+  max-width: 220px;
+  overflow: hidden;
+}
+
+.rail:first-child {
+  left: 0;
+}
+
+.railRight {
+  right: 0;
+}
+
+.orb {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 18%;
+  left: 6%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(61, 214, 198, 0.28), transparent 68%);
+  filter: blur(8px);
+  transform: translate(calc(var(--mx) * 10px), calc(var(--my) * 14px));
+  transition: transform 0.4s ease-out;
+}
+
+.orbRight {
+  top: auto;
+  bottom: 22%;
+  left: auto;
+  right: 4%;
+  background: radial-gradient(circle, rgba(61, 214, 198, 0.22), transparent 70%);
+  transform: translate(calc(var(--mx) * -12px), calc(var(--my) * -10px));
+}
+
+.network {
+  position: absolute;
+  inset: 6% 4% 16%;
+  width: auto;
+  height: auto;
+  opacity: 0.95;
+  transform: translate(calc(var(--mx) * 6px), calc(var(--my) * 8px));
+  transition: transform 0.45s ease-out;
+}
+
+.link {
+  stroke: rgba(61, 214, 198, 0.55);
+  stroke-width: 0.45;
+  stroke-linecap: round;
+  stroke-dasharray: 28;
+  stroke-dashoffset: 28;
+  animation: draw 4.8s ease-in-out infinite;
+}
+
+.core {
+  fill: var(--accent);
+}
+
+.halo {
+  fill: none;
+  stroke: rgba(61, 214, 198, 0.55);
+  stroke-width: 0.45;
+}
+
+.node {
+  animation: pulse 3.6s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.caption {
+  position: absolute;
+  left: 18px;
+  bottom: 28px;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(139, 149, 165, 0.72);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.railRight .caption {
+  left: auto;
+  right: 18px;
+  transform: none;
+}
+
+.stream {
+  position: absolute;
+  inset: 12% auto 20% 16px;
+  width: 34px;
+  overflow: hidden;
+  mask-image: linear-gradient(180deg, transparent, #000 12%, #000 88%, transparent);
+  z-index: 1;
+}
+
+.railRight .stream {
+  left: auto;
+  right: 16px;
+}
+
+.streamTrack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  animation: rise 28s linear infinite;
+}
+
+.streamReverse .streamTrack {
+  animation-name: fall;
+  animation-duration: 32s;
+}
+
+.streamTrack span {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(61, 214, 198, 0.72);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+
+@keyframes draw {
+  0%,
+  20% {
+    stroke-dashoffset: 28;
+    opacity: 0.2;
+  }
+
+  45%,
+  70% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: -28;
+    opacity: 0.25;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.92);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1280px) {
+  .root {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link,
+  .node,
+  .streamTrack {
+    animation: none;
+  }
+
+  .link {
+    stroke-dashoffset: 0;
+    opacity: 0.7;
+  }
+
+  .orb,
+  .orbRight,
+  .network {
+    transform: none;
+    transition: none;
+  }
+}

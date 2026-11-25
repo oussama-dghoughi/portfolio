@@ -1,0 +1,179 @@
+.hero {
+  width: min(var(--width), calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 340px);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(40px, 5.4vw, 68px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.software {
+  color: var(--accent);
+}
+
+.name {
+  margin-top: 14px;
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.pitch {
+  max-width: 34rem;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: clamp(16px, 1.7vw, 18px);
+  line-height: 1.5;
+}
+
+.signals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 0;
+  margin-top: 14px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.sep {
+  margin: 0 10px;
+  color: var(--line-strong);
+}
+
+.live {
+  color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.cv,
+.mail {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cv {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #04211e;
+  font-weight: 600;
+}
+
+.cv:hover {
+  filter: brightness(1.05);
+}
+
+.mail {
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+}
+
+.mail:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 28px;
+  margin-top: 22px;
+}
+
+.contacts a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  color: var(--text);
+}
+
+.icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.contacts strong {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.contacts a:hover strong {
+  color: var(--accent);
+}
+
+.portrait {
+  margin: 0;
+  justify-self: end;
+}
+
+.portrait img {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  border: none;
+  background: transparent;
+}
+
+.portrait figcaption {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .hero {
+    width: min(var(--width), calc(100% - 32px));
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 0 36px;
+  }
+
+  .hero h1,
+  .name {
+    white-space: normal;
+  }
+
+  .portrait {
+    max-width: 280px;
+  }
+}

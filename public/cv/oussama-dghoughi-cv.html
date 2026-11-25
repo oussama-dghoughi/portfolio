@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Oussama Dghoughi — Curriculum Vitae</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 16mm 16mm 16mm 16mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #111;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 11pt;
+        line-height: 1.35;
+        background: #fff;
+      }
+
+      a {
+        color: #111;
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+        font-weight: normal;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      .page {
+        max-width: 180mm;
+        margin: 0 auto;
+      }
+
+      .header {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #111;
+      }
+
+      .photo {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border: none;
+        outline: none;
+        flex: none;
+      }
+
+      .identity {
+        flex: 1;
+      }
+
+      .identity h1 {
+        font-size: 18pt;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .role {
+        margin-top: 3px;
+        font-size: 11pt;
+      }
+
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 16px;
+        margin-top: 10px;
+        font-size: 10pt;
+        line-height: 1.35;
+      }
+
+      .contact {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .contact svg {
+        width: 12px;
+        height: 12px;
+        flex: none;
+        display: block;
+      }
+
+      .org a {
+        text-decoration: underline;
+        text-underline-offset: 1px;
+      }
+
+      .pitch {
+        margin-top: 12px;
+        text-align: justify;
+        font-size: 10.5pt;
+      }
+
+      section {
+        margin-top: 14px;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #111;
+        font-size: 11pt;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .item {
+        margin-top: 9px;
+      }
+
+      .item-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+      }
+
+      .item-head h3 {
+        font-size: 11pt;
+        font-weight: bold;
+      }
+
+      .date {
+        font-size: 9pt;
+        white-space: nowrap;
+        max-width: 42%;
+        text-align: right;
+        word-break: break-all;
+      }
+
+      .date a {
+        text-decoration: underline;
+        text-underline-offset: 1px;
+      }
+
+      .org {
+        margin-top: 1px;
+        font-size: 10.5pt;
+        font-style: italic;
+      }
+
+      .contract {
+        margin-top: 1px;
+        font-size: 10pt;
+      }
+
+      ul {
+        margin-top: 4px;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-top: 2px;
+        text-align: justify;
+      }
+
+      .skills p {
+        margin-top: 4px;
+        text-align: justify;
+      }
+
+      .label {
+        font-style: italic;
+      }
+
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <img class="photo" src="../photo.png" alt="Photo de Oussama Dghoughi" width="72" height="72" />
+        <div class="identity">
+          <h1>Oussama Dghoughi</h1>
+          <p class="role">Software Engineer — Full Stack &amp; Intelligence Artificielle</p>
+          <div class="contacts">
+            <span class="contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#666"
+                  d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"
+                />
+              </svg>
+              Paris, France
+            </span>
+            <a class="contact" href="tel:+33758656565">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#34A853"
+                  d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .7-.3 1L6.6 10.8z"
+                />
+              </svg>
+              +33 7 58 65 65 65
+            </a>
+            <a class="contact" href="mailto:oussamadghoughi2@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#EA4335"
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                />
+              </svg>
+              oussamadghoughi2@gmail.com
+            </a>
+            <a
+              class="contact"
+              href="https://www.linkedin.com/in/oussama-dghoughi-bb020418b"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#0A66C2"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+              linkedin.com/in/oussama-dghoughi-bb020418b
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <p class="pitch">
+        Développeur full stack, je conçois, développe et mets en production des applications web et
+        mobiles pour des besoins métier : sites, extranets, CRM, API et automatisations. J’interviens
+        aussi sur des briques d’intelligence artificielle (OCR, résumés de documents, intégration de
+        modèles) et sur le suivi en production. Formé en data et en ingénierie logicielle.
+      </p>
+
+      <section>
+        <h2>Expérience professionnelle</h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Software Engineer — Full Stack</h3>
+            <p class="date">Janvier 2025 – Présent</p>
+          </div>
+          <p class="org">
+            <a href="https://usts.ai">USTS</a>, Paris
+          </p>
+          <p class="contract">Contrat d’alternance</p>
+          <ul>
+            <li>
+              Développement d’applications web et mobiles sur mesure pour des clients métier
+              (formation, hôtellerie, énergie, laboratoires, domiciliation).
+            </li>
+            <li>
+              Conception et évolution d’API et d’intégrations (paiements, CRM, signature
+              électronique, services tiers) afin de connecter les outils utilisés au quotidien.
+            </li>
+            <li>
+              Mise en production, correction d’incidents et accompagnement technique des équipes
+              cliente sur les livraisons.
+            </li>
+            <li>
+              Gestion des serveurs et migrations d’environnements / applications.
+            </li>
+            <li>
+              Optimisation backend et supervision des performances à l’aide de Prometheus et Grafana.
+            </li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Data Engineering</h3>
+            <p class="date">Octobre 2024 – Décembre 2024</p>
+          </div>
+          <p class="org">
+            <a href="https://www.doctolib.fr">Doctolib</a> × HETIC, Paris
+          </p>
+          <p class="contract">Mission réalisée dans le cadre du Bachelor Data &amp; IA (HETIC)</p>
+          <ul>
+            <li>
+              Participation à des travaux d’ingénierie de la donnée : préparation, traitement et
+              structuration de données dans un contexte produit santé.
+            </li>
+            <li>
+              Contribution à l’analyse et à la valorisation des données pour appuyer les besoins
+              métier et les cas d’usage data.
+            </li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Responsable du pôle Systèmes d’Information</h3>
+            <p class="date">2024 – Présent</p>
+          </div>
+          <p class="org">
+            <a href="https://amge-caravane.org/">AMGE-Caravane</a>
+          </p>
+          <ul>
+            <li>
+              Organisation et suivi des outils numériques de l’association (sites, applications,
+              mises en ligne).
+            </li>
+            <li>
+              Coordination technique de l’équipe et contribution au développement de solutions
+              utilisées lors d’événements (notamment application mobile avec badge QR et scan de
+              billets).
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Projets réalisés</h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Cambionet — site, back-office et IA documentaire</h3>
+            <p class="date">
+              <a href="https://bibliotheque.cambionet.usts.fr/">bibliotheque.cambionet.usts.fr</a>
+            </p>
+          </div>
+          <ul>
+            <li>
+              Refonte du site et du back-office, avec filtres avancés pour la gestion documentaire.
+            </li>
+            <li>
+              Mise en place d’un parcours OCR : extraction du contenu des documents puis génération
+              de résumés à l’aide de modèles d’IA (Grok, Claude, Gemini), pour un ou plusieurs
+              fichiers.
+            </li>
+            <li>Technologies : Angular, Symfony, EasyAdmin.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Call the Team — plateforme web et application mobile</h3>
+            <p class="date">
+              <a href="https://calltheteam.fr">calltheteam.fr</a>
+            </p>
+          </div>
+          <ul>
+            <li>
+              Développement d’une plateforme pour hôtels et restaurants : planning, congés,
+              réservations et paiements.
+            </li>
+            <li>
+              Conception de l’API Teams Up et de l’application mobile iOS / Android associée.
+            </li>
+            <li>Technologies : Symfony, Ionic, React, Capacitor, Stripe, Docker.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Cloud Dev Fusion — site et extranet de formation</h3>
+            <p class="date">
+              <a href="https://clouddevfusion.com">clouddevfusion.com</a>
+            </p>
+          </div>
+          <ul>
+            <li>
+              Site du centre de formation et extranet avec trois profils (administrateur, formateur,
+              étudiant).
+            </li>
+            <li>
+              Fonctionnalités de planning, émargement automatisé, signature et envoi de documents.
+            </li>
+            <li>Technologies : Angular, Symfony, API Platform, MySQL.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Energy Groupe et Smart Connect — CRM métier</h3>
+            <p class="date">
+              <a href="https://energygroupe.usts.ai">energygroupe.usts.ai</a><br />
+              <a href="https://enerlinks-app.usts.ai">enerlinks-app.usts.ai</a>
+            </p>
+          </div>
+          <ul>
+            <li>
+              CRM pour équipes commerciales : centralisation du planning, des documents, des
+              indicateurs et du suivi des mandats / contrats.
+            </li>
+            <li>
+              Intégrations avec des services externes (INSEE, Pappers, Jotform, Slimpay) pour
+              automatiser la vérification d’entreprise, la signature et les relances.
+            </li>
+            <li>Technologies : Angular, Symfony, PostgreSQL.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>
+              Master — Développement et déploiement de solutions numériques sécurisées
+            </h3>
+            <p class="date">2025 – 2027</p>
+          </div>
+          <p class="org">Sup de Vinci</p>
+          <p class="contract">En cours — spécialisation full stack, architecture, DevOps et sécurité</p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Bachelor Data &amp; Intelligence Artificielle</h3>
+            <p class="date">Obtenu</p>
+          </div>
+          <p class="org">HETIC</p>
+          <p class="contract">Programmation, data science, intelligence artificielle et technologies numériques</p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Parcours école d’ingénieurs — informatique et génie logiciel</h3>
+            <p class="date"></p>
+          </div>
+          <p class="org">Polytech Tours</p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h3>Classes préparatoires scientifiques MPSI / MP</h3>
+            <p class="date">2020 – 2022</p>
+          </div>
+          <p class="org">CPGE</p>
+        </article>
+      </section>
+
+      <section class="skills">
+        <h2>Compétences techniques</h2>
+        <p>
+          <span class="label">Développement web et mobile :</span>
+          React, Angular, TypeScript, Next.js, Ionic, Capacitor, React Native, Symfony, PHP, NestJS,
+          Node.js, API REST
+        </p>
+        <p>
+          <span class="label">Données, IA et automatisation :</span>
+          Python, OCR, intégration de modèles (OpenAI, Anthropic, Gemini), n8n, Make
+        </p>
+        <p>
+          <span class="label">Bases de données et mise en production :</span>
+          MySQL, PostgreSQL, Docker, Git, CI/CD, Prometheus, Grafana
+        </p>
+        <p>
+          <span class="label">Intégrations métier :</span>
+          Stripe, Slimpay, DocuSign, Brevo, Jotform, WhatsApp, INSEE, Pappers
+        </p>
+        <p>
+          <span class="label">Méthodes :</span>
+          Agile / Scrum, conception d’applications métier, livraison et maintenance en production
+        </p>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li>Professional Scrum Master I (PSM I), Scrum.org — septembre 2025</li>
+          <li>Data Science, IBM — juillet 2025</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Langues</h2>
+        <ul>
+          <li>Français : langue maternelle</li>
+          <li>Anglais : niveau professionnel</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

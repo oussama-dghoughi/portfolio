@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-label="Doctolib">
+  <rect width="220" height="48" rx="8" fill="#0B1F33"/>
+  <circle cx="24" cy="24" r="10" fill="#0070F3"/>
+  <path fill="#FFFFFF" d="M21.2 17.5h5.1c3.4 0 5.5 1.9 5.5 4.8 0 3-2.1 4.9-5.5 4.9h-2.6V31h-2.5V17.5zm2.5 7.3h2.4c1.8 0 2.9-.9 2.9-2.5s-1.1-2.4-2.9-2.4h-2.4v4.9z"/>
+  <text x="44" y="31" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.6">Doctolib</text>
+</svg>
